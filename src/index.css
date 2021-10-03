@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @layer base {
+  body {
+    @apply m-5 bg-gray-400 dark:bg-black;
+  }
+} */
+
+html{
+  
+}
+
+@layer base {
+
+}
+
+@layer components {
+
+}
