@@ -1,21 +1,74 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 /* @layer base {
   body {
     @apply m-5 bg-gray-400 dark:bg-black;
   }
 } */
 
-html{
-  
-}
+html {}
+
+
 
 @layer base {
-
+  .no-scrollbar{
+    -ms-overflow-style: none;
+    scrollbar-color: transparent transparent;
+    overflow: -moz-scrollbars-none;
+    scrollbar-width: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 @layer components {
+  .popover-btn {
+    @apply w-[39px] h-[39px] p-2.5 ml-2 rounded-full bg-fb-popover flex justify-center items-center cursor-pointer active:bg-fb-active;
+  }
+  .popover-panel {
+    @apply w-[300px] p-4 bg-fb-header rounded-lg shadow-lg absolute right-0 top-12 border border-fb-input lg:w-[360px];
+  }
+  .card{
+    @apply rounded-lg mt-4 px-4 py-3 bg-fb-card;
+  }
+}
 
+.swiper{
+  padding: 5px 0 5px 5px !important;
+}
+
+.swiper-slide{
+  width: auto !important;
+  user-select: none;
+}
+
+.swiper-button-prev{
+  width: 36px !important;
+  height: 36px !important;
+  border-radius: 50%;
+  top: 29px !important;
+  background-image: url("https://bruce-fe-fb.web.app/image/left-arrow.svg");
+  background-repeat: no-repeat;
+  background-size: 24px;
+  background-position: center;
+  background-color: #3e4042;
+}
+.swiper-button-prev::after{
+  display: none;
+}
+.swiper-button-next{
+  width: 36px !important;
+  height: 36px !important;
+  border-radius: 50%;
+  top: 29px !important;
+  background-image: url("https://bruce-fe-fb.web.app/image/right-arrow.svg");
+  background-repeat: no-repeat;
+  background-size: 24px;
+  background-position: center;
+  background-color: #3e4042;
+}
+.swiper-button-next::after{
+  display: none;
 }
